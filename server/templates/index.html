@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hanabi Game Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+    	.container{
+    		padding-top: 50px;
+    		max-width: 500px;
+    	}
+    </style>
+  </head>
+  <body>
+  	<div class="container">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Hanabi Game Viewer</h1>
+          <p class="lead">Click on a game to view it.</p>
+                
+        </div>
+        <ul class="list-group">
+          {% for filename in filenames %}
+          <a href="/{{filename}}" class="list-group-item">{{ filename }}</a>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+  </body>
+</html>

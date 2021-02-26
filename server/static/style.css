@@ -1,0 +1,86 @@
+
+.game-card {
+    padding: .5em;
+    font-size: 2vw;
+    width: max-content;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.game-action {
+    font-size: 1.25rem;
+}
+
+.card-game-action {
+    align-items: center;
+    padding: 5px;
+}
+
+.played {
+    border-style: dotted;
+    border-color: rgb(170, 2, 2);
+    background-color: rgba(220, 50, 50, 0.3);
+}
+
+.hinted {
+    border-style: dotted;
+    border-color: rgb(2, 170, 77);
+    background-color: rgba(56, 220, 50, 0.3);
+}
+
+.no-bullet {
+    list-style-type: none;
+}
+
+.pad-sm {
+    padding: 5px;
+}
+
+.pad-left-sm {
+    padding-left: .4rem;
+}
+
+.pad-bot-big {
+    padding-bottom: 20px;
+}
+
+#turn-progress {
+    width: 100%;
+    font-size: 1vw;
+}
+
+.progress {
+    height: auto;
+    width: inherit;
+    margin-left: 10px;
+}
+
+.input-group {
+    width: max-content;
+    margin: 7px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.li-group_item {
+    display: flex;
+}
+
+#deck-tile {
+    padding-top: 2em;
+}
+
+.card-deck {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding: 1em;
+}
+
+.no-border {
+    border: none;
+}
