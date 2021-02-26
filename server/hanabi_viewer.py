@@ -31,7 +31,7 @@ def index() -> str:
     filenames: List[str] = []
     for file in path.glob(f"*{GAME_FILE_EXTENSION}"):
         name: str = str(file)
-        filename: str = name[:name.rfind(GAME_FILE_EXTENSION)]
+        filename: str = name[name.rfind("/")+1:name.rfind(GAME_FILE_EXTENSION)]
         filenames.append(filename)
     return render_template("index.html", filenames=list(sorted(filenames)))
 
