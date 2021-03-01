@@ -23,4 +23,4 @@ sh produce_static_files.sh
 ```
 will automatically generate the static HTML files for the games located in the ```game_logs``` folder.
 
-Note that you need to manually add them to the ```index.html```.
+Note that the links are automatically added to the ```index.html```.
